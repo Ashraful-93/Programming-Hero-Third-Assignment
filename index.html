@@ -29,6 +29,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
     <style>
         .lato-font{
             font-family: 'Lato', sans-serif;
@@ -38,7 +41,7 @@
     </style>
 
 </head>
-<body class="lato-font" >
+<body class="lato-font mt-4" >
 
     <Header class="lg:mr-60 lg:ml-60">
 
@@ -69,11 +72,30 @@
           
             <!-- Navbar search section -->
 
-            <div class="navbar-end lg:mr-5">
+            <!-- <div class="navbar-end lg:mr-5">
                 <div class="form-control">
-                    <input type="text" placeholder="Search" class="input rounded-full" />
+                    <input type="text" placeholder="Search" class="input rounded-full p-2"/>
+                    <i class='bx bx-search'></i>
+                </div>
+            </div> -->
+
+            <div class="flex items-center justify-center mr-5">
+                <form method="GET">
+                  <div class="relative text-gray-600 focus-within:text-gray-400">
+                   
+                    <input type="search" name="q" class="py-2 text-sm text-black bg-white rounded-full pl-10 focus:outline-none focus:bg-black focus:text-white-900" placeholder="Search..." autocomplete="off">
+
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </button>
+                      </span>
+
                   </div>
-            </div>
+                </form>
+              </div>
+
+
           </div>
 
           <!-- slider section -->
@@ -82,10 +104,10 @@
             <div id="slide1" class="carousel-item relative w-full">
               <img src="/images/banner1.png" class="w-full" />
 
-              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-20 space-y-3 lg:space-y-5">
+              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-15 space-y-3 lg:space-y-3">
                 <h1 class="lg:text-5xl text-xl font-bold col text-white ">Exotic tastes at your <br>doorstep</h1>
                 <p class="text-base text-white">We supply highly quality organic products</p>
-                <button class="btn bg-orange-600 border-none">Shop Now</button>
+                <button class="btn bg-orange-600 border-none text-white">Shop Now</button>
               </div>
 
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -97,10 +119,10 @@
             <div id="slide2" class="carousel-item relative w-full">
               <img src="/images/banner2.png" class="w-full" />
 
-              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-20 space-y-3 lg:space-y-5">
+              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-15 space-y-3 lg:space-y-3">
                 <h1 class="lg:text-5xl text-xl font-bold col text-white ">Exotic tastes at your <br>doorstep</h1>
                 <p class="text-base text-white">We supply highly quality organic products</p>
-                <button class="btn bg-orange-600 border-none">Shop Now</button>
+                <button class="btn bg-orange-600 border-none text-white">Shop Now</button>
               </div>
 
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -112,10 +134,10 @@
             <div id="slide3" class="carousel-item relative w-full">
               <img src="/images/banner3.png" class="w-full" />
 
-              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-20 space-y-3 lg:space-y-5">
+              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-15 space-y-3 lg:space-y-3">
                 <h1 class="lg:text-5xl text-xl font-bold col text-white ">Exotic tastes at your <br>doorstep</h1>
                 <p class="text-base text-white">We supply highly quality organic products</p>
-                <button class="btn bg-orange-600 border-none">Shop Now</button>
+                <button class="btn bg-orange-600 border-none text-white">Shop Now</button>
               </div>
 
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -127,11 +149,12 @@
             <div id="slide4" class="carousel-item relative w-full">
               <img src="/images/banner4.png" class="w-full" />
 
-              <div class="flex-1 absolute lg:left-60 text-center top-10 left-20 lg:top-20 space-y-3 lg:space-y-5">
+              <div class="flex-1 absolute lg:left-60 lg:right-50 text-center top-10 left-20 lg:top-15 space-y-3 lg:space-y-5">
                 <h1 class="lg:text-5xl text-xl font-bold col text-white ">Exotic tastes at your <br>doorstep</h1>
                 <p class="text-base text-white">We supply highly quality organic products</p>
-                <button class="btn bg-orange-600 border-none">Shop Now</button>
+                <button class="btn bg-orange-600 border-none text-white">Shop Now</button>
               </div>
+
 
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
@@ -141,6 +164,8 @@
           </div>
 
     </Header>
+
+   
 
     <Main class="lg:mr-60 lg:ml-60">
         <!-- Dael of the day -->
@@ -316,9 +341,77 @@
            </div>
         </section>
 
+        <!-- Meet our team -->
+        <Section class="mt-20">
+            <div class="hero" style="background-image: url('images/team.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+
+                <div class="grid grid-rows-2">
+
+                    <div class="hero-content text-center text-neutral-content mb-3 ">
+                        <div class="max-w-md">
+                          <h1 class="mb-3 mt-10 text-3xl font-bold">Meet With Our Team</h1>
+                          <p class="mb-3 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-5 mb-10">
+                        <div class="text-white">
+                            <img src="images/member1.png" alt="" style="max-width: 100px; max-height: 80px;"/>
+                            <h2 class="text-lg">Awlad Hossain</h2>
+                            <p class="text-sm">Fruits Expert</p>
+                            <div >
+                                <a href="#"><i class='bx bxl-facebook-circle text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-twitter text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-linkedin-square text-orange-500' ></i></a>
+                            </div>
+                        </div>
+
+                        <div class="text-white">
+                            <img src="images/member2.png" alt="" style="max-width: 100px; max-height: 80px;"/>
+                            <h2 class="text-lg">Safia Chowdhury</h2>
+                            <p class="text-sm">Fruits Expert</p>
+                            <div >
+                                <a href="#"><i class='bx bxl-facebook-circle text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-twitter text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-linkedin-square text-orange-500' ></i></a>
+                            </div>
+                        </div>
+
+                        <div class="text-white">
+                            <img src="images/member3.png" alt="" style="max-width: 100px; max-height: 80px;"/>
+                            <h2 class="text-lg">Rokib Hossain</h2>
+                            <p class="text-sm">Fruits Expert</p>
+                            <div >
+                                <a href="#"><i class='bx bxl-facebook-circle text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-twitter text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-linkedin-square text-orange-500' ></i></a>
+                            </div>
+                        </div>
+
+                        <div class="text-white">
+                            <img src="images/member4.png" alt="" style="max-width: 100px; max-height: 80px;"/>
+                            <h2 class="text-lg">Chaity</h2>
+                            <p class="text-sm">Fruits Expert</p>
+                            <div >
+                                <a href="#"><i class='bx bxl-facebook-circle text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-twitter text-orange-500'></i></a>
+                                <a href="#"><i class='bx bxl-linkedin-square text-orange-500' ></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+              </div>
+        </Section>
+    
     </Main>
 
-    <Footer class="mt-10">
+    <Footer class="mt-20">
         <footer class="footer footer-center p-10 bg-black text-white text-primary-content">
             <div>
               <p class="font-bold">
